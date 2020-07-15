@@ -1,0 +1,95 @@
+.test1 {
+    width: 500px;
+    height: 319px;
+    background-color: darkgray;
+    clip-path: circle(35% at 50% 50%);
+}
+
+.test1 img {
+    clip-path: circle(10% at 50% 70%);
+}
+
+.test2 {
+    width: 500px;
+    height: 319px;
+    background-color: darkgray;
+}
+
+.test2 img {
+    clip-path: ellipse(30% 20% at 50% 50%);
+}
+
+.test3 {
+    width: 500px;
+    height: 319px;
+    background-color: darkgray;
+}
+
+.test3 img {
+    clip-path: inset(5% 10% 15% 20%);
+}
+
+.test4 {
+    width: 500px;
+    height: 319px;
+    background-color: darkgray;
+}
+
+.test4 img {
+    clip-path: polygon(50% 10%, 10% 90%, 90% 90%)
+}
+
+.test5 img {
+    float: left;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    shape-outside: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    shape-margin: 10px;
+
+}
+
+.test5 p {
+    font-size: 24px;
+}
+
+.test6 img {
+    float: right;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    shape-outside: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.test6 p {
+    font-size: 24px;
+}
+
+.test7 img {
+    filter: blur(2px);
+    filter: brightness(150%);
+    filter: contrast(180%);
+    filter: drop-shadow(10px 10px 8px black);
+    filter: grayscale(80%);
+    filter: hue-rotate(500deg);
+    filter: invert(100%);
+    filter: opacity(80%);
+    filter: saturate(150%);
+    filter: sepia(120%);
+    filter: none;
+    filter: blur(1px) contrast(120%) drop-shadow(10px 10px 5px blue);
+}
+
+.test8 {
+    width: 300px;
+    height: 300px;
+    background-color: cornflowerblue;
+    transition-property: width, height, background;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-delay: 3s;
+    transition-timing-function: steps(4);
+    transition: all 2s linear 2s;
+}
+
+.test8:hover {
+    width: 500px;
+    height: 500px;
+    background-color: darkcyan;
+}
